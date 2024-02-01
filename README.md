@@ -26,6 +26,46 @@
 ## Overview and Highlights
 ### 💡 Plug-and-use, parameter-efficient, multimodal-friendly, and temporal-sensitive structure
 
+<div align=center>
+<img src="images/method.jpg" width="700px">
+</div>
+
 ### 💡 State-of-the-art zero-shot results on various video tasks using thousands of fewer GPU hours
 
+<div align=center>
+<img src="images/downstream.jpg" width="400px">
+</div>
+
 ### 💡 State-of-the-art video conversation results with and without video instruction tuning
+
+<div align=center>
+<img src="images/radar.jpg" width="400px">
+</div>
+
+## Qualitative Results
+The Evaluation of BT-Adapter's Performance across Different Situations.
+### 👀 The Sequence of Actions
+<div align=center>
+<img src="images/visualization1.jpg" width="600px">
+</div>
+
+### 👀 Unusual Actions
+<div align=center>
+<img src="images/visualization2.jpg" width="600px">
+</div>
+
+### 👀 Complex Actions and Scenes In A Long Video
+<div align=center>
+<img src="images/visualization3.jpg" width="600px">
+</div>
+
+## Citation
+If you find the code useful for your research, please consider citing our paper:
+```
+@article{liu2023one,
+  title={One for all: Video conversation is feasible without video instruction tuning},
+  author={Liu, Ruyang and Li, Chen and Ge, Yixiao and Shan, Ying and Li, Thomas H and Li, Ge},
+  journal={arXiv preprint arXiv:2309.15785},
+  year={2023}
+}
+```
