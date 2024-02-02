@@ -1,6 +1,6 @@
 torch~=2.0.1
 tqdm~=4.65.0
-#transformers@git+https://github.com/huggingface/transformers.git@cae78c46
+transformers@git+https://github.com/huggingface/transformers.git@cae78c46
 numpy~=1.24.3
 Pillow~=9.5.0
 decord~=0.6.0
@@ -12,4 +12,4 @@ sentencepiece~=0.1.99
 protobuf~=4.23.2
 accelerate~=0.20.3
 tokenizers>=0.13.3
-openai
+openai==0.35
