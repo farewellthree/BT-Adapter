@@ -1,19 +1,15 @@
 export PYTHONPATH="./:$PYTHONPATH"
-torchrun --nproc_per_node=4 --master_port=29001 video_chatgpt/train/train_mem.py \
-          --model_name_or_path /group/30042/palchenli/projects/llava-7b/llava-7b-lightening-v1-1 \
+torchrun --nproc_per_node=8 --master_port=29001 bt_adapter/train/train_mem.py \
+          --model_name_or_path /Path/to/your/llava-7b-lightening-v1-1 \
           --mm_vision_tower True \
-          --freeze_CLIP False \
           --version v1 \
-          --data_path /group/30042/public_datasets/video_chatgpt/video_chatgpt_training.json \
-          --video_folder /group/30042/public_datasets/video_chatgpt/activity_CLIPL14_8layer \
-          --tune_mm_mlp_adapter False \
+          --data_path /Path/to/your/video_chatgpt_training.json \
+          --video_folder /Path/to/your/activity_CLIPL14_8layer \
+          --tune_mm_mlp_adapter True \
           --mm_use_vid_start_end \
           --bf16 False \
           --fp16 True \
-          --clip_lr 0.1 \
-          --fsdp "full_shard auto_wrap" \
-          --fsdp_transformer_layer_cls_to_wrap LlamaDecoderLayer \
-          --output_dir ./Video-ChatGPT_7B-1.1_Checkpoints_finetuneSTAN_allbf16_FSDP_trainCLIP \
+          --output_dir ./BTAdapter_LLava_7B-1.1_Checkpoints \
           --num_train_epochs 3 \
           --per_device_train_batch_size 1 \
           --per_device_eval_batch_size 1 \

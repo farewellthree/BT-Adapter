@@ -559,8 +559,7 @@ class UniFormerV2(BaseModule):
         assert pretrained is not None, \
             'please specify clip pretraied checkpoint'
 
-        model_path = '/group/30042/ruyangliu/mmaction2/ckpt/uniformerv2/vit-base-p16-res224_clip-rgb_20221219-b8a5da86.pth'
-        #model_path = _MODELS[pretrained]
+        model_path = _MODELS[pretrained]
         logger.info(f'Load CLIP pretrained model from {model_path}')
         state_dict = _load_checkpoint(model_path, map_location='cpu')
         state_dict_3d = self.state_dict()

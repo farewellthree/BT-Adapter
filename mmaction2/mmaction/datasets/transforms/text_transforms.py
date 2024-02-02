@@ -19,7 +19,7 @@ from pkg_resources import packaging
 
 @lru_cache()
 def default_bpe():
-    return '/group/30042/ruyangliu/mmaction2/ckpt/clip/bpe_simple_vocab_16e6.txt.gz'
+    return 'bpe_simple_vocab_16e6.txt.gz'
 
 
 @lru_cache()

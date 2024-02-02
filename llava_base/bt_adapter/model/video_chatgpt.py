@@ -41,7 +41,7 @@ class VideoChatGPTLlamaModel(LlamaModel):
 
     def initialize_vision_modules(self, mm_vision_tower=False, pretrain_mm_mlp_adapter=None, tune_mm_mlp_adapter=False, pretrain_mm_vision_tower=None):
         if mm_vision_tower:
-            vision_tower_name = '/group/30042/ruyangliu/mmaction2/ckpt/clip/L14'
+            vision_tower_name = 'Path/to/your/CLIP-L14/'
             CLIP_tower = CLIPVisionModel.from_pretrained(vision_tower_name, torch_dtype=torch.float16,
                                                    low_cpu_mem_usage=True)
             CLIP_tower.requires_grad_(False)

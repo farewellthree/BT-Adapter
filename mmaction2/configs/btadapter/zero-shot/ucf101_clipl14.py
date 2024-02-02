@@ -29,7 +29,7 @@ data_root_val = "/Path/to/your/ucf101/dataset/"
 ann_file_train = '/Path/to/your/ucf101/train_tsv_annotation'
 ann_file_val = '/Path/to/your/ucf101/test_tsv_annotation'
 ann_file_test = '/Path/to/your/ucf101/test_tsv_annotation'
-classes = '/group/30042/ziyunzeng/SortFormer/meta_data/ucf101/classInd_new.txt'
+classes = '/Path/to/your/ucf101/class_name.txt'
 delimiter = '\t'
 
 file_client_args = dict(io_backend='disk')

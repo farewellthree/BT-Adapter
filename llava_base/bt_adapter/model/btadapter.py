@@ -14,7 +14,7 @@ from mmengine.model import constant_init
 from mmengine.runner.checkpoint import _load_checkpoint
 
 class VITCLIPPretrained_BTAdapter(nn.Module):
-    def __init__(self, clip_model, depth=4, clip_weight='/group/30042/ruyangliu/mmaction2/ckpt/clip/L14', 
+    def __init__(self, clip_model, depth=4, clip_weight=None, 
                  reserve_layers=-1, return_layers=0, gradient_checkpointing=False,
                   out_norm=None, middle_norm=None, **kwargs): 
 
