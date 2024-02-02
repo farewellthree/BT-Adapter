@@ -21,7 +21,7 @@
 ---
 | Paper | Weights | Video-text Pretraining | Downstream Evaluation | Instruction Tuning | VideoChatGPT Evaluation |
 | :---: | :---: | :---: | :---: | :---: | :---: | 
-| <a href='https://arxiv.org/abs/2309.15785'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> | <a href='https://huggingface.co/farewellthree/BTAdapter-Weight'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'> | [Video-text Pretraining](#training-train) | [Downstream Evaluation](#video-instruction-dataset-open_file_folder) | [Instruction Tuning](#quantitative-evaluation-bar_chart) | [VideoChatGPT Evaluation](#qualitative-analysis-mag) |
+| <a href='https://arxiv.org/abs/2309.15785'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> | <a href='https://huggingface.co/farewellthree/BTAdapter-Weight'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'> | [Video-text Pretraining](mmaction2/README.md#Training) | [Downstream Evaluation](mmaction2/README.md#Evaluation) | [Instruction Tuning](llava_base/README.md#Training) | [VideoChatGPT Evaluation](llava_base/README.md#Evaluation) |
 
 ## Overview and Highlights
 ### 💡 Plug-and-use, parameter-efficient, multimodal-friendly, and temporal-sensitive structure
